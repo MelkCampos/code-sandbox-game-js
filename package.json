@@ -1,0 +1,13 @@
+{
+    "name": "brick-breaker-html5-game",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.html",
+  
+    "dependencies": {},
+    "devDependencies": {
+      "parcel-bundler": "^1.6.1"
+    },
+    "keywords": []
+  }
+  
