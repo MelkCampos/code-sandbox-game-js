@@ -29,7 +29,18 @@ export default class Paddle {
     }
 
     draw(context) {
-        this.speed = 0
+        context.fillStyle = '#0ff'
+        context.fillRect(this.position.x, this.position.y, this.width, this.height)
+    }
+
+    update(detalTime) {
+        this.position.x += this.speed
+
+        if(this.position.x < 0) this.position.x = 0
+
+        if(this.position.x + this.width > this.gameWidth) {
+            this.position.x = this.gameWidth - this.width
+        }
     }
 
 
